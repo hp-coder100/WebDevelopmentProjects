@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0">
+
+    <title>Snake Game</title>
+    <style>
+       body{
+           display: flex;
+           direction: flex-column;
+            justify-content:space-around;
+
+       }
+       #mainCanvas{
+        background-color: black;
+        border: red 10px solid;
+
+       }
+       .hidden{
+           display: none;
+       }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Snake Game</h1>
+        <h3>Score : <span id="score"></span></h3>
+        <h3>Highest Score : <span id="Hscore"></span></h3>
+        <br>
+        <br>
+        <div>
+            <p>Project Created By : Hemant Prajapati<br> Email : developer.Hp100@gmail.com</p>
+        </div>
+        <br><br>
+        <div id="goContent" class="hidden">
+        <h3>Game Over</h3>
+        <br>
+        <button id="reset" onclick="loadGame()">Reset</button>
+
+
+        <br><br><br>
+
+    </div>
+
+    </div>
+    <canvas id="mainCanvas"></canvas>
+    <script src="script.js"/>
+</body>
+</html>
